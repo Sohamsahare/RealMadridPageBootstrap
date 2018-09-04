@@ -1,0 +1,7 @@
+.navbar-light{ 
+	.navbar-brand{
+		&:visited, &:hover{
+			color: $madridblue;
+		}
+	}
+}
