@@ -1,7 +1,8 @@
 @import '~bootstrap/scss/bootstrap';
-@import '~bootswatch/dist/Lumen/bootswatch';
 @import '~bootswatch/dist/Lumen/variables';
+@import '~bootswatch/dist/Lumen/bootswatch';
 @import 'variables';
+@import 'mixins';
 @import 'base';
 @import 'layout';
 @import 'module';
