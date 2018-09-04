@@ -1,4 +1,45 @@
-.card-columns{
-	margin:0;
+%layout-padding{
 	padding: 0.3rem 2rem;
+	border-top: 0.01rem solid $madridgrey;
+}
+
+%relative-position{
+	position: relative;
+	left: 3%;
+}
+
+.card-columns{
+	@extend %layout-padding;
+	margin:0;
+}
+
+
+.jumbotron-fluid{
+	@include background-fill('../img/ramos_madridista.jpg');
+}
+
+/* Madridista Section */
+.layout_madridista{
+	position: relative;
+	width: 100%;
+	display: block;
+	overflow:hidden;
+	@extend %layout-padding;
+}
+
+.madridista_text{
+	color: white;
+	font-size: 4vw;
+	width: 100%;
+	@extend %relative-position;
+}
+
+#layout-madridista-button{
+	@extend %relative-position;
+	font-size: 1.4vw;
+}
+
+.madridista_image{
+	width: 100%;
+	height: auto;
 }

@@ -7,8 +7,19 @@
 	}
 }
 
-#card-fullsize{
-	width: 100%;
+.card-columns {
+  @include media-breakpoint-only(sm) {
+    column-count: 1;
+  }
+  @include media-breakpoint-only(md) {
+    column-count: 2;
+  }
+  @include media-breakpoint-only(lg) {
+    column-count: 2;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 3;
+  }
 }
 
 .section-heading{
@@ -16,4 +27,31 @@
 	padding: .5rem 0;
 	border-bottom: 0.05rem solid $madridgrey;
 	margin: 0;
+}
+
+.container{
+	margin-left: 0;
+}
+
+
+.text_banner{
+	position: absolute;
+	width: 75%;
+}
+
+.madridista_text{
+	color: white;
+	font-size: 4vw;
+	width: 100%;
+	@extend %relative-position;
+}
+
+#layout-madridista-button{
+	@extend %relative-position;
+	font-size: 1.4vw;
+}
+
+.madridista_image{
+	width: 100%;
+	height: auto;
 }
