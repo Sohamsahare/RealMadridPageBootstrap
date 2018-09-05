@@ -8,18 +8,23 @@
 }
 
 .card-columns {
-  @include media-breakpoint-only(sm) {
-    column-count: 1;
-  }
-  @include media-breakpoint-only(md) {
-    column-count: 2;
-  }
-  @include media-breakpoint-only(lg) {
-    column-count: 2;
-  }
-  @include media-breakpoint-only(xl) {
-    column-count: 3;
-  }
+	@include media-breakpoint-only(sm) {
+		column-count: 1;
+	}
+	@include media-breakpoint-only(md) {
+		column-count: 2;
+	}
+	@include media-breakpoint-only(lg) {
+		column-count: 2;
+	}
+	@include media-breakpoint-only(xl) {
+		column-count: 3;
+	}
+}
+
+.badge{
+  font-size: .5em;
+  vertical-align: top;
 }
 
 .section-heading{
@@ -28,11 +33,6 @@
 	border-bottom: 0.05rem solid $madridgrey;
 	margin: 0;
 }
-
-.container{
-	margin-left: 0;
-}
-
 
 .text_banner{
 	position: absolute;
@@ -55,3 +55,18 @@
 	width: 100%;
 	height: auto;
 }
+
+.fab{
+  font-size: 1.5rem;
+  margin:.5rem;
+  color:$madridgrey;
+}
+
+.footer-logo{
+  flex:1;
+}
+
+.footer-social{
+  flex:3;
+}
+

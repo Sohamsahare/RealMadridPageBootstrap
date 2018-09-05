@@ -3,6 +3,11 @@
 	border-top: 0.01rem solid $madridgrey;
 }
 
+%layout-no-padding{
+	padding:0;
+	border-top: 0.01rem solid $madridgrey;	
+}
+
 %relative-position{
 	position: relative;
 	left: 3%;
@@ -13,21 +18,22 @@
 	margin:0;
 }
 
-
-.jumbotron-fluid{
-	@include background-fill('../img/ramos_madridista.jpg');
-}
-
 .layout_madridista{
 	position: relative;
 	width: 100%;
 	display: block;
 	overflow:hidden;
-	@extend %layout-padding;
+	@extend %layout-no-padding;
 }
 
 
 .layout-footer{
 	padding:.5rem;
 	background-color: $lightgrey;
+}
+
+footer{
+	h5{
+		color:$madridgrey;
+	}
 }
