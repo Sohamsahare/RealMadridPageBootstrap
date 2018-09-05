@@ -18,7 +18,6 @@
 	@include background-fill('../img/ramos_madridista.jpg');
 }
 
-/* Madridista Section */
 .layout_madridista{
 	position: relative;
 	width: 100%;
@@ -27,19 +26,8 @@
 	@extend %layout-padding;
 }
 
-.madridista_text{
-	color: white;
-	font-size: 4vw;
-	width: 100%;
-	@extend %relative-position;
-}
 
-#layout-madridista-button{
-	@extend %relative-position;
-	font-size: 1.4vw;
-}
-
-.madridista_image{
-	width: 100%;
-	height: auto;
+.layout-footer{
+	padding:.5rem;
+	background-color: $lightgrey;
 }
