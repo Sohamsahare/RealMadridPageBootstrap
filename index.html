@@ -1,3 +1,5 @@
+<!-- Webpage designed by Soham Sandep Sahare using HTLM5, CSS3 , SASS & BOOTSTRAP -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,12 +10,14 @@
   <link rel="shortcut icon" href="icon/logo.ico" type="image/ico">
 </head>
 <body>
+  <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <a class="navbar-brand" href="#">
       <img src="png/madrid_color.png" width="28.6" height="40" class="d-inline-block  align-top" alt="Real Madrid Logo">
       Real<strong>madrid</strong>
       <img src="png/champions13_ucl1.png" width="35.5" height="40" class="d-inline-block  align-top" alt="UCL titles Logo">
     </a>
+    <!-- Navigation Toggler -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -51,6 +55,7 @@
       </ul>
     </div>
   </nav>
+  <!-- Carousel -->
   <section id="carousel-home" class="carousel slide carousel-fade" data-ride="carousel">
     <ol class="carousel-indicators ">
       <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
@@ -89,6 +94,7 @@
       <span class="sr-only">Next</span>
     </a>
   </section>
+  <!-- Masonry style card columns -->
   <section class="card-columns">
     <h2 class="section-heading">Latest News</h2>
     <article class="card" >
@@ -164,6 +170,7 @@
         </div>
       </article>
     </section>
+    <!-- Pagination which will be linked with news article later on -->
     <div>
       <ul class="pagination pagination-sm justify-content-center">
         <li class="page-item disabled">
@@ -183,12 +190,14 @@
         </li>
       </ul>
     </div>
+    <!--  Alert used to attract attention and sign up as a madridista -->
     <div class="alert alert-info alert-dismissible fade show" role="alert">
       <strong>Holy moly!</strong> You should become a <strong>MADRIDISTA</strong> LIKE RIGHT NOW!!
       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
+    <!-- Jumbotron -->
     <section class="jumbotron jumbotron-fluid layout_madridista">
       <article class="text_banner">
         <h2 class="madridista_text display-4">Support your team from anywhere.<br>Become a Madridista today!
@@ -223,6 +232,7 @@
       </div>
     </article>
   </section>
+  <!-- Footer -->
   <footer class="layout-footer">
     <div class="container ">
       <div class="row ">
@@ -232,17 +242,43 @@
         <div class="col footer-social align-self-end" >
           <h5 class="text-center"> <em>Follow us on...</em> </h5>
           <div class="row w-100 justify-content-center">
-            <i class="fab fa-fw fa-facebook"></i>
-            <i class="fab fa-fw fa-instagram"></i>
-            <i class="fab fa-fw fa-twitter"></i>
-            <i class="fab fa-fw fa-youtube"></i>
-            <i class="fab fa-fw fa-snapchat"></i>
-            <i class="fab fa-fw fa-google-plus"></i>
+            <a href="#"><i class="fab fa-fw fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-fw fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-fw fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-fw fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-fw fa-snapchat"></i></a>
+            <a href="#"><i class="fab fa-fw fa-google-plus"></i></a>
           </div>
         </div>
       </div>
     </div>
     <hr class="display-4" />
+    <div class="container">
+      <div class="row">
+        <div class="col d-sm-flex footer-site-map justify-content-around">
+          <a href="#">Home</a>
+          <a href="#">News</a>
+          <a href="#">Gallery</a>
+          <a href="#">Squad</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+    <hr class="display-4"/>
+    <div class="container">
+      <div class="row justify-content-around">
+            <span class="align-self-center">No Copyright</span>
+            <i class="fab fa-creative-commons-pd "></i>
+            <span class="align-self-center">Powered by</span>
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-sass"></i>
+            <i class="fab fa-node-js"></i>
+            <i class="fab fa-font-awesome"></i>
+            <i class="fab fa-github"></i>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

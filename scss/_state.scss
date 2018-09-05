@@ -1,7 +1,53 @@
+/* Hover colour change effect */
 .navbar-light{ 
 	.navbar-brand{
 		&:visited, &:hover{
-			color: $madridblue;
+    @include color-change($madridblue);
 		}
 	}
+}
+
+footer{
+	a{
+		&:hover{
+    @include color-change(black);
+    }
+  }
+  
+  .fa-facebook:hover{
+    @include color-change(#3B579D);
+  }
+  .fa-instagram:hover{
+    @include color-change(#DA217F);
+  }
+  .fa-twitter:hover{
+   @include color-change(#28AAE1); 
+ }
+ .fa-youtube:hover{
+  @include color-change(#FF0000);
+  }
+  .fa-snapchat:hover{
+    @include color-change(#FFFC01);
+  }
+  .fa-google-plus:hover{
+    @include color-change(#D0422A);
+  }
+  .fa-html5:hover{
+    @include color-change(#F16529);
+  }
+  .fa-css3-alt:hover{
+    @include color-change(#039AE4);
+  }
+  .fa-sass:hover{
+    @include color-change(#CC6699);
+  }
+  .fa-node-js:hover{
+    @include color-change(#84BD56);
+  }
+  .fa-font-awesome:hover{
+    @include color-change(#025297);
+  }
+  .fa-github:hover{
+    @include color-change(#222222);
+  }
 }

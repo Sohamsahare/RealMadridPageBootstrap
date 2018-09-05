@@ -1,23 +1,36 @@
-%layout-padding{
-	padding: 0.3rem 2rem;
-	border-top: 0.01rem solid $madridgrey;
+/* Carousel */
+#carousel-home{
+	.carousel-item{
+		.carousel-caption{
+			background-color: rgba(0,0,0,0.5);
+			padding:1rem;
+		}
+	}
 }
 
-%layout-no-padding{
-	padding:0;
-	border-top: 0.01rem solid $madridgrey;	
-}
-
-%relative-position{
-	position: relative;
-	left: 3%;
-}
-
+/* Misonry Layout */
 .card-columns{
 	@extend %layout-padding;
 	margin:0;
+
+	@include media-breakpoint-only(sm) {
+		column-count: 1;
+	}
+
+	@include media-breakpoint-only(md) {
+		column-count: 2;
+	}
+
+	@include media-breakpoint-only(lg) {
+		column-count: 2;
+	}
+
+	@include media-breakpoint-only(xl) {
+		column-count: 3;
+	}
 }
 
+/* Jumbotron Madridista */
 .layout_madridista{
 	position: relative;
 	width: 100%;
@@ -26,14 +39,20 @@
 	@extend %layout-no-padding;
 }
 
-
+/* Footer Layout */
 .layout-footer{
 	padding:.5rem;
 	background-color: $lightgrey;
 }
 
 footer{
-	h5{
+	h5,span{
 		color:$madridgrey;
+	}
+	.footer-site-map{
+		a{
+			text-decoration: none;
+			color: $madridgrey;
+		}
 	}
 }

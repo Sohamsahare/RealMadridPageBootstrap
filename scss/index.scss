@@ -4,9 +4,67 @@
 @import 'fa_scss/fontawesome';
 @import 'fa_scss/brands';
 @import 'variables';
+@import 'custom';
 @import 'mixins';
 @import 'base';
 @import 'layout';
 @import 'module';
 @import 'state';
-@import 'custom';
+
+/* Navigation Bar */
+
+.navbar{
+	padding:0 .5rem;
+	opacity: .9;
+}
+
+.navbar-light{
+
+	.navbar-brand {
+		color: $madridblue;
+		padding: 0 1rem 0 0;
+		font-size: 2rem;
+	}
+
+	.navbar-nav{
+		.nav-link{
+			color:$madridgrey;
+		}
+	}
+}
+
+
+/* Jumbotron Madridista */
+
+.text_banner{
+	position: absolute;
+	width: 75%;
+}
+
+.madridista_text{
+	color: white;
+	font-size: 4vw;
+	width: 100%;
+	@extend %relative-position;
+}
+
+#layout-madridista-button{
+	@extend %relative-position;
+	font-size: 1.4vw;
+}
+
+.madridista_image{
+	width: 100%;
+	height: auto;
+}
+
+/* Footer */
+
+.footer-logo{
+  flex:1;
+}
+
+.footer-social{
+  flex:3;
+}
+

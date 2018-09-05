@@ -1,20 +1,14 @@
-.navbar{
-	padding:0 .5rem;
-	opacity: .9;
+%layout-padding{
+	padding: 0.3rem 2rem;
+	border-top: 0.01rem solid $madridgrey;
 }
 
-.navbar-light{
-
-	.navbar-brand {
-		color: $madridblue;
-		padding: 0 1rem 0 0;
-		font-size: 2rem;
-	}
-
-	.navbar-nav{
-		.nav-link{
-			color:$madridgrey;
-		}
-	}
+%layout-no-padding{
+	padding:0;
+	border-top: 0.01rem solid $madridgrey;	
 }
 
+%relative-position{
+	position: relative;
+	left: 3%;
+}
