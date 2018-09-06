@@ -1,3 +1,5 @@
+<!-- Webpage designed by Soham Sandep Sahare using HTLM5, CSS3 , SASS & BOOTSTRAP -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,35 +10,37 @@
   <link rel="shortcut icon" href="icon/logo.ico" type="image/ico">
 <script type="text/javascript" src="bundle.js"></script></head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <a class="navbar-brand" href="#">
-      <img src="png/madrid_color.png" width="28.6" height="40" class="d-inline-block  align-top" alt="Real Madrid Logo">
+      <img src="png/madrid_color.png" width="29" height="40" class="d-inline-block  align-top" alt="Real Madrid Logo">
       Real<strong>madrid</strong>
-      <img src="png/champions13_ucl1.png" width="35.5" height="40" class="d-inline-block  align-top" alt="UCL titles Logo">
+      <img src="png/champions13_ucl1.png" width="35" height="40" class="d-inline-block  align-top" alt="UCL titles Logo">
     </a>
+    <!-- Navigation Toggler -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" href="#">News</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Gallery
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
             <a class="dropdown-item" href="#">Photos</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Videos</a>
           </div>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Squad
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
             <a class="dropdown-item" href="#">Real Madrid C.F</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Real Madrid Castilla</a>
@@ -51,8 +55,9 @@
       </ul>
     </div>
   </nav>
-  <div id="carousel-home" class="carousel slide carousel-fade" data-ride="carousel">
-    <ol class="carousel-indicators">
+  <!-- Carousel -->
+  <section id="carousel-home" class="carousel slide carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators ">
       <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
       <li data-target="#carousel-home" data-slide-to="1"></li>
       <li data-target="#carousel-home" data-slide-to="2"></li>
@@ -69,14 +74,14 @@
         <img class="d-block w-100" src="img/stadium.jpg" alt="The proposed Santiago Bernabeu stadium">
         <div class="carousel-caption d-none d-md-block">
           <h5>The Dream Estadio Santiago Bernabeu</h5>
-            <p class="lead">The new Bernabeu will be a special, unique &amp; spectacular stadium.<br>-<em>Fiorentino Perez</em></p>
+          <p class="lead">The new Bernabeu will be a special, unique &amp; spectacular stadium.<br>-<em>Fiorentino Perez</em></p>
         </div>
       </div>
       <div class="carousel-item">
         <img class="d-block w-100" src="img/hero.jpg" alt="Real Madrid CF winning their 13th UEFA Champions League title.">
         <div class="carousel-caption d-none d-md-block">
           <h5>The Decimotercera!</h5>
-            <p class="lead"><strong>The Whites</strong> captured their <em>third</em> successive <em>UEFA Champions League</em> crown as the club continues to build on its European legacy.</p>
+          <p class="lead"><strong>The Whites</strong> captured their <em>third</em> successive <em>UEFA Champions League</em> crown as the club continues to build on its European legacy.</p>
         </div>
       </div>
     </div>
@@ -88,24 +93,192 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-  </div>
-  <section class="layout-content">
-    <div class="container">
-      <div class="rows">
-        <div class="col-sm-10">
-          <div class="card-group">
-            <div class="card">
-              <h4 class="card-header">Card Header</h4>
-              <video controls  class="news_video">
-                <source src="mp4/ronaldo.mp4" type="video/mp4">
-                </video>
-              </div>
-              <div class="card"></div>
-              <div class="card"></div>
-            </div>
+  </section>
+  <!-- Masonry style card columns -->
+  <section class="card-columns">
+    <h2 class="section-heading">Latest News</h2>
+    <article class="card" >
+      <img class="card-img-top" src="img/uefabest.jpg" alt="Modric, Ronaldo & Salah nominated for FIFA's The Best Award">
+      <div class="card-body">
+        <h5 class="card-title"><span class="badge badge-pill badge-danger ">HOT</span>UEFA Men's The Best Nominations</h5>
+        <p class="card-text"><strong>Luka Modric</strong> (Real Madrid CF), <strong>Cristiano Ronaldo</strong> (Juventus FC) &amp; <strong>Mohammed Salah</strong> (Liverpool FC) have been nominated for <em>FIFA's The Best</em> award.</p>
+      </div>
+    </article>
+    <article class="card">
+      <img class="card-img-top" src="img/kroos.jpg" alt="Toni Kroos in German Colours">
+      <div class="card-body">
+        <h5 class="card-title">Thirteen Real Madrid players called up for their national teams</h5>
+        <p class="card-text"><em>Ramos, Nacho, Carvajal, Isco, Asensio, Ceballos, Varane, Courtois, Kroos, Modric, Casemiro, Bale and Valverde</em> will play international matches.</p>
+        <p class="card-text text-right"><small class="text-muted">Last updated 23 mins ago</small></p>
+      </div>
+    </article>
+    <article class="card ">
+      <img class="card-img-top" src="img/benzema.jpg" alt="Karim Benzeme celebrating a goal">
+      <div class="card-body">
+        <h5 class="card-title">Benzema has now scored against all of his LaLiga opponents</h5>
+        <p class="card-text">The forward's <strong>131 goals</strong> in the competition have been shared out amongst the <strong>33 teams</strong> he has faced.</p>
+        <p class="card-text text-right"><small class="text-muted">Last updated 3 days ago</small></p>
+      </div>
+    </article>
+    <article class="card">
+      <img class="card-img" src="img/zidane.jpg" alt="Zinedine Zidane with his Third consectuive UEFA CL Trophy">
+      <div class="card-body">
+        <h5 class="card-title"><span class="badge badge-pill badge-danger ">HOT</span>Zidane, Deschamps and Dalic, candidates for The FIFA Best Coach award 2018</h5>
+        <p class="card-text"><strong>Zinedine Zidane</strong> is one of the candidates for the best coach trophy, in the third edition of The Best Awards organised by FIFA. The Frenchman is one of the three finalists, along with Didier Deschamps and Zlatko Dalic. The winner will be announced at the gala that will take place in London on September 24</p>
+        <p class="card-text text-right"><small class="text-muted">Last updated 13 mins ago</small></p>
+      </div>
+    </article>
+    <article class="card">
+      <img class="card-img" src="img/wcdraw.jpg" alt="Zinedine Zidane with his Third consectuive UEFA CL Trophy">
+      <div class="card-body">
+        <h5 class="card-title">Real Madrid will play the Asian champion or Guadalajara in the Club World Cup</h5>
+        <p class="card-text"><strong>Real Madrid</strong> now know their path in their defence of the Club World Cup. The current champions have two possible opponents in the semi-final on 19 December (5:30pm CET): the Asian champions, who will be confirmed on 10 November, or Mexican side CD Guadalajara. The winners of this match will play Lopetegui’s team for a place in the final. Real Madrid will play all their matches at the Zayed Sports City Stadium in Abu Dhabi.</p>
+        <p class="card-text text-right"><small class="text-muted">Last updated 31 mins ago</small></p>
+      </div>
+    </article>
+    <article class="card">
+      <img class="card-img" src="img/firstcup.jpg" alt="Team photo who won the first Intercontinental Cup for Real Madrid">
+      <div class="card-body">
+        <h5 class="card-title">On 4th September 1960, the club lifted its first Intercontinental Cup</h5>
+        <p class="card-text">0n 4 September 1960, <strong>Real Madrid</strong> secured the first of the club's six world champion titles. This victory came against Montevideo-based <strong>Peñarol</strong> in the old Intercontinental Cup, which was contested between the European Cup and Copa Libertadores holders. The Whites saw off the Uruguayan outfit in a two-legged final, the first leg of which took place on 3 July 1960 at Peñarol's ground and ended in a goalless stalemate.</p>
+        <p class="card-text text-right"><small class="text-muted">Last updated 1 day ago</small></p>
+      </div>
+    </article>
+    <article class="card">
+      <img class="card-img" src="img/perez.jpg" alt="Fiorentino Perez congratulating a player">
+      <div class="card-body">
+        <h5 class="card-title">A new master's degree at the Real Madrid Graduate School-Universidad Europea</h5>
+        <p class="card-text"><em>The Master in Communication and Sports Journalism</em> teaches what <strong>sports journalism</strong> is about and how it works, by analysing how the industry’s professional and social dimension has evolved nationally and internationally, including its legal, managing, marketing and economic aspects. The Master program trains students in journalistic work covering areas such as: Print journalism, television and sport, sports radio, digital journalism and social networks, and finally communication management in sports organizations from a cross-platform perspective.</p>
+        <p class="card-text text-right"><small class="text-muted">Last updated 1 days ago</small></p>
+      </div>
+    </article>
+    <article class="card">
+      <img class="card-img" src="img/bale.jpg" alt="Fiorentino Perez congratulating a player">
+      <div class="card-body">
+        <h5 class="card-title"><span class="badge badge-pill badge-danger ">HOT</span>Bale’s overhead kick in the Champions League final, nominated for the Puskas Prize 2018</h5>
+        <p class="card-text"><strong>Bale's</strong> overhead kick against Liverpool in the Champions League final is among the 10 finalists for the 2018 FIFA Puskas Prize for the best goal. The winner will be announced on September 24 at a gala that will take place in London.
+        <em>Cristiano Ronaldo, Cheryshev, Christodoulopoulos, de Arrascaeta, McGree, Messi, Pavard, Quaresma and Salah</em> are the scorers of the other goals in the running. The winner will be chosen through a vote by uefa.com users.</p>
+        <p class="card-text text-right"><small class="text-muted">Last updated 2 days ago</small></p>
+        </div>
+      </article>
+      <article class="card">
+        <img class="card-img" src="img/courtois.jpg" alt="Fiorentino Perez congratulating a player">
+        <div class="card-body">
+          <h5 class="card-title"><span class="badge badge-pill badge-danger ">HOT</span>Courtois, Lloris and Schmeichel, nominated for The Best FIFA Goalkeeper Award</h5>
+          <p class="card-text"><strong>Thibaut Courtois</strong> is one of the candidates for <strong>The Best FIFA Goalkeeper Award 2018</strong>. The Real Madrid goalkeeper, together with<em> Hugo Lloris and Kasper Schmeichel</em> were nominated for this award, which will be announced on September 24 at the gala that will take place in London.</p>
+          <p class="card-text text-right"><small class="text-muted">Last updated 1 mins ago</small></p>
+        </div>
+      </article>
+    </section>
+    <!-- Pagination which will be linked with news article later on -->
+    <div>
+      <ul class="pagination pagination-sm justify-content-center">
+        <li class="page-item disabled">
+          <a class="page-link" href="#">&laquo;</a>
+        </li>
+        <li class="page-item active">
+          <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">3</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">&raquo;</a>
+        </li>
+      </ul>
+    </div>
+    <!--  Alert used to attract attention and sign up as a madridista -->
+    <div class="alert alert-info alert-dismissible fade show" role="alert">
+      <strong>Holy moly!</strong> You should become a <strong>MADRIDISTA</strong> LIKE RIGHT NOW!!
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <!-- Jumbotron -->
+    <section class="jumbotron jumbotron-fluid layout_madridista">
+      <article class="text_banner">
+        <h2 class="madridista_text display-4">Support your team from anywhere.<br>Become a Madridista today!
+        </h2>
+        <button type="button" class="btn btn-primary" id="layout-madridista-button" data-toggle="modal" data-target="#madridista-modal">Become a <strong>Madridista</strong></button>
+      </article>
+      <img src="img/ramos_madridista.jpg" alt="Madridista subscription" class="madridista_image" />
+    </section>
+    <section class="modal fade" id="madridista-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <article class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Are you a Plastic Fan?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+           <blockquote class="blockquote text-right">
+            <p class="mb-0">The Real Madrid shirt is white. It can be stained with blood, sweat, and mud, but never with shame.</p>
+            <footer class="blockquote-footer"><cite title="Source Title">Santiago Bernabeu Yeste</cite></footer>
+          </blockquote>
+          <blockquote class="blockquote text-right">
+            <p class="mb-0">When you put on this shirt, you know that you’ve arrived at the very top. There is no greater honour.</p>
+            <footer class="blockquote-footer"><cite title="Source Title">Sergio Ramos</cite></footer>
+          </blockquote>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">No</button>
+          <button type="button" class="btn btn-danger disabled" >Yes</button>
+        </div>
+      </div>
+    </article>
+  </section>
+  <!-- Footer -->
+  <footer class="layout-footer">
+    <div class="container ">
+      <div class="row ">
+        <div class="col footer-logo">
+          <img src="png/transparent_rma.png" width=76 height=100 id="footer-logo" alt="Real madrid logo in grey">
+        </div>
+        <div class="col footer-social align-self-end" >
+          <h5 class="text-center"> <em>Follow us on...</em> </h5>
+          <div class="row w-100 justify-content-center">
+            <a href="#"><i class="fab fa-fw fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-fw fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-fw fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-fw fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-fw fa-snapchat"></i></a>
+            <a href="#"><i class="fab fa-fw fa-google-plus"></i></a>
           </div>
         </div>
       </div>
-    </section>
-  </body>
-  </html>
+    </div>
+    <hr class="display-4" />
+    <div class="container">
+      <div class="row">
+        <div class="col d-sm-flex footer-site-map justify-content-around">
+          <a href="#">Home</a>
+          <a href="#">News</a>
+          <a href="#">Gallery</a>
+          <a href="#">Squad</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+    <hr class="display-4"/>
+    <div class="container">
+      <div class="row justify-content-around">
+            <span class="align-self-center">No Copyright</span>
+            <i class="fab fa-creative-commons-pd "></i>
+            <span class="align-self-center">Powered by</span>
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-sass"></i>
+            <i class="fab fa-node-js"></i>
+            <i class="fab fa-font-awesome"></i>
+            <i class="fab fa-github"></i>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

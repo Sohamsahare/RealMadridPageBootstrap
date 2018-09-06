@@ -1,0 +1,8 @@
+@mixin background-fill($property){
+	background: url($property) center center no-repeat;
+	background-size:100%;
+}
+
+@mixin color-change($property){
+	color:$property;
+}
