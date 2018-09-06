@@ -24,6 +24,9 @@
 		color: $madridblue;
 		padding: 0 1rem 0 0;
 		font-size: 2rem;
+		@include media-breakpoint-only(sm){
+			padding:0;
+		}
 	}
 
 	.navbar-nav{
